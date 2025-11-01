@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Oscilloscope: What it is</title>
+  <style>
+    :root{--bg:#e8fbff;--card:#ffffff;--accent:#06a8d9;--muted:#6b7280}
+    *{box-sizing:border-box;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#eef9ff);color:#0f172a}
+    header{background:linear-gradient(90deg,var(--accent),#6fd7ff);padding:28px 20px;color:white}
+    .wrap{max-width:900px;margin:22px auto;padding:0 18px}
+    h1{margin:0;font-size:clamp(20px,3.4vw,34px)}
+    p.lead{margin:8px 0 0;opacity:0.95}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(6,168,217,0.08);margin-bottom:20px}
+    h2{font-size:20px;margin-top:0}
+    .muted{color:var(--muted);font-size:14px}
+    dl{display:grid;grid-template-columns:120px 1fr;gap:8px 18px}
+    dt{font-weight:700}
+    dd{margin:0;color:var(--muted)}
+    .btn{background:var(--accent);color:white;padding:10px 16px;border-radius:8px;text-decoration:none;display:inline-block;margin-top:14px}
+    footer{text-align:center;color:var(--muted);margin:40px 0}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Oscilloscope — What it Does</h1>
+      <p class="lead">Learn the function and parts of an oscilloscope before trying the interactive simulation.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>What is an Oscilloscope?</h2>
+      <p>An oscilloscope is an electronic instrument that graphically displays varying signal voltages, usually as a 2D plot of voltage (vertical axis) versus time (horizontal axis). It allows engineers and students to visualize and analyze waveform shapes, amplitude, frequency, rise/fall times, noise, and other characteristics.</p>
+    </section>
+
+    <section class="card">
+      <h2>Key Functions</h2>
+      <ul>
+        <li><strong>Visualize waveforms:</strong> See how voltage changes over time.</li>
+        <li><strong>Measure amplitude & frequency:</strong> Read peak-to-peak, RMS, period, and frequency.</li>
+        <li><strong>Triggering:</strong> Stabilize repetitive waveforms so they appear steady on screen.</li>
+        <li><strong>Cursors & math:</strong> Apply basic measurements or analysis like FFT (in advanced models).</li>
+        <li><strong>Capture transients:</strong> Capture single-shot or rare events with proper acquisition modes.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Common Parts</h2>
+      <dl>
+        <dt>Probe</dt><dd>Connects the circuit under test to the oscilloscope input.</dd>
+        <dt>Vertical</dt><dd>Controls for voltage scale (volts/div) and channel position.</dd>
+        <dt>Horizontal</dt><dd>Controls time base (time/div) and horizontal position.</dd>
+        <dt>Trigger</dt><dd>Sets the condition to start waveform capture.</dd>
+        <dt>Display</dt><dd>The screen showing the waveform grid.</dd>
+      </dl>
+    </section>
+
+    <section class="card">
+      <h2>Quick Examples</h2>
+      <ul>
+        <li><strong>Sine wave:</strong> Clean periodic signal — used for audio and AC power tests.</li>
+        <li><strong>Square wave:</strong> Fast edges — for digital logic timing.</li>
+        <li><strong>Ringing:</strong> Shows unwanted oscillations after transitions.</li>
+        <li><strong>Noise:</strong> Small rapid fluctuations — grounding or EMI issues.</li>
+      </ul>
+
+      <a href="oscilloscope_simulator.html" class="btn">Open Interactive Simulator →</a>
+    </section>
+
+    <footer>
+      <p class="muted">Save this as <strong>oscilloscope_info.html</strong> and make sure <strong>oscilloscope_simulator.html</strong> is in the same folder.</p>
+    </footer>
+  </main>
+</body>
+</html>
